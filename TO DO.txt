@@ -1,0 +1,17 @@
+TO DO:
+
+- Gantt project									-			5
+- Creare flyingdonut condiviso					-			3		
+- Creare cartella github condivisa				-			1
+- Creare progetto VS C# (client - server)		-			5
+- Creare Database									-			13
+- Diagrammi UML									-			13			
+- Implemenatare classe studente				-			8	
+- Implementare classe aula						-			5			
+- Implementare gestione richieste (server)	-			13
+- Implementare interfaccia Microsoft Form		-			8
+- Scrittura documentazione						-			8
+- Realizzazione presentazione					-  			8	
+
+
+ 
