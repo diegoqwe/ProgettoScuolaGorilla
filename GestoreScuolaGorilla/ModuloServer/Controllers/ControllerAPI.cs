@@ -12,11 +12,16 @@ namespace ModuloServer.Controllers
             return Ok("Hello World");
         }
 
-        //http get se viene richiesto di restituire il numero 50
         [HttpGet("{id}")]
         public ActionResult<string> GetInt(int id)
         {
             return Ok($"You requested with this id: {id}");
+        }
+
+        [HttpPost]
+        public ActionResult<string> Post()
+        {
+            return Ok("You requested with POST");
         }
     }
 }
