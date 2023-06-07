@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GestoreScuolaGorilla",
+    "\\GestoreScuolaGorilla\\ModuloServer",
+    "\\GestoreScuolaGorilla\\ModuloServer\\Controllers",
+    "\\GestoreScuolaGorilla\\ModuloServer\\Properties"
   ],
+  "SelectedNode": "\\GestoreScuolaGorilla\\ModuloServer\\Controllers\\ControllerAPI.cs",
   "PreviewInSolutionExplorer": false
 }
