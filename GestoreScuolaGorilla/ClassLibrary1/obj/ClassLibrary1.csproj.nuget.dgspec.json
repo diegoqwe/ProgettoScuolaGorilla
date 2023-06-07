@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj": {}
+    "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj": {
+    "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
-        "projectName": "ModuloServer",
-        "projectPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
+        "projectUniqueName": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectName": "ClassLibrary1",
+        "projectPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\user4_12_1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\obj\\",
+        "outputPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user4_12_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -57,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
