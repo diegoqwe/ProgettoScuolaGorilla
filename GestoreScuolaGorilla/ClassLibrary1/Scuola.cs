@@ -1,7 +1,8 @@
 ﻿namespace ClassLibrary1
 {
-    public class Persona
+    public class Scuola
     {
+        protected
 
     }
 }
