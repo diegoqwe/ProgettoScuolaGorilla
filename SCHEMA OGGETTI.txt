@@ -1,0 +1,28 @@
+SCHEMA OGGETTI 
+
+Scuola   [1A][1B][1C]...     <- List
+
+	  |
+	  |
+	  |
+	  V
+	
+Classe	    nomeClasse <- String
+	    [Tizio][Caio][Sempronio]... <- List
+
+		|
+		|
+		|
+		V
+
+Studente     Materie [materia,Voti], [materia,Voti]  <- Dictionary
+	     nomeStudente <- String		|
+	     cognomeStudente <- String 		|
+						|
+						V
+
+Voti					[10][6][8][7] <- List 
+
+						
+
+
