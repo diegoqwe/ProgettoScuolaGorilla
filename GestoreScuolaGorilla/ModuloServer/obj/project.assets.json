@@ -240,19 +240,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user4_12_1\\.nuget\\packages\\": {}
+    "C:\\Users\\user9_12_1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
+      "projectUniqueName": "C:\\Users\\user9_12_1\\Documents\\ANNO1\\Ingegneria del Software\\Progettone\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
       "projectName": "ModuloServer",
-      "projectPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
-      "packagesPath": "C:\\Users\\user4_12_1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ModuloServer\\obj\\",
+      "projectPath": "C:\\Users\\user9_12_1\\Documents\\ANNO1\\Ingegneria del Software\\Progettone\\GestoreScuolaGorilla\\ModuloServer\\ModuloServer.csproj",
+      "packagesPath": "C:\\Users\\user9_12_1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user9_12_1\\Documents\\ANNO1\\Ingegneria del Software\\Progettone\\GestoreScuolaGorilla\\ModuloServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user4_12_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user9_12_1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -260,14 +260,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj": {
-              "projectPath": "C:\\Users\\user4_12_1\\Desktop\\Gorilla\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj"
+            "C:\\Users\\user9_12_1\\Documents\\ANNO1\\Ingegneria del Software\\Progettone\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj": {
+              "projectPath": "C:\\Users\\user9_12_1\\Documents\\ANNO1\\Ingegneria del Software\\Progettone\\GestoreScuolaGorilla\\ClassLibrary1\\ClassLibrary1.csproj"
             }
           }
         }
@@ -306,7 +307,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
