@@ -11,9 +11,9 @@
   "profiles": {
     "ModuloServer": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-      "launchUrl": "swagger",
+      "dotnetRunMessages": false,
+      "launchBrowser": false,
+      "launchUrl": "values",
       "applicationUrl": "http://localhost:5212",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

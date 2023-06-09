@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ClassLibrary1;
-using MySql.Data.MySqlClient;
+using Npgsql;
+using Microsoft.AspNetCore.Hosting.Server;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Permissions;
+using System.Collections.Generic;
 
 namespace ModuloServer.Controllers
 {
@@ -10,11 +14,11 @@ namespace ModuloServer.Controllers
     {
         //DATABASE ACCESS VARIABLES
         private const string datasource = "localhost";
-        private const string port = "3306";
-        private const string username = "root";
-        private const string passwd = "root";
+        private const string port = "7777";
+        private const string database = "mydatabase"; 
+        private const string username = "postgres";
+        private const string passwd = "samuele01";
 
-        MySqlConnection connection = new MySqlConnection($"datasource={datasource};port={port};username={username};password={passwd}");
 
 
         [HttpGet]
@@ -23,25 +27,25 @@ namespace ModuloServer.Controllers
             return Ok("Hello World");
         }
 
-        [HttpPost("{id}")]
+        [HttpPost("voti")]
         public ActionResult<string> GetInt(Voti voti)
         {
             return Ok($"You requested with this id: {voti}");
         }
 
         [HttpPost("studenti")]
-        public IActionResult PostStudente([FromBody] Studente studente)
+        public ActionResult<string> PostStudente(Studente studente)
         {
-            connection.Open();
-            string insertStudenteQuery = $"INSERT INTO studenti (nome, cognome) VALUES ('{studente.Nome}', '{studente.Cognome}')";
-            MySqlCommand cmd = new MySqlCommand(insertStudenteQuery, connection);
-            return Ok("Studente salvato con successo.");
-        }
-
-        [HttpPost]
-        public ActionResult<string> Post()
-        {
-            return Ok("You requested with POST");
+            var cs = $"Host={datasource};Port={port};Username={username};Password={passwd};Database={database}";
+            using (var con = new NpgsqlConnection(cs))
+            {
+                con.Open();
+                var cmd = new NpgsqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = $"INSERT INTO STUDENTI (nome,cognome,id_matricola) VALUES ('{studente.Nome}', '{studente.Cognome}','{studente.Matricola}','{studente.IdClasse}')";
+                cmd.ExecuteNonQuery();
+            }
+            return Ok();
         }
     }
 }
