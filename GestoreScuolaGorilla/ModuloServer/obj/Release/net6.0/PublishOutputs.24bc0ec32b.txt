@@ -1,0 +1,14 @@
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ModuloServer.exe
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ModuloServer.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ModuloServer.deps.json
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ModuloServer.runtimeconfig.json
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ModuloServer.pdb
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ClassLibrary1.dll
+C:\Users\user9_12_1\Documents\ANNO1\Ingegneria del Software\Progettone\GestoreScuolaGorilla\ModuloServer\obj\Release\net6.0\PubTmp\Out\ClassLibrary1.pdb

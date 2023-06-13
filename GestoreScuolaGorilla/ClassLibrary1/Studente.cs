@@ -32,6 +32,15 @@ namespace ClassLibrary1
             idClasse = "";
         }
 
+        public Studente(string nome, string cognome, string matricola, string idClasse)
+        {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.matricola = matricola;
+            votiMaterie = new Dictionary<string, Voti>();
+            this.idClasse = idClasse;
+        }
+
         public string Nome
         {
             get

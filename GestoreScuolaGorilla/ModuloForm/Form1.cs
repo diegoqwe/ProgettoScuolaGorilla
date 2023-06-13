@@ -8,7 +8,7 @@ namespace ModuloForm
 {
     public partial class Form1 : Form
     {
-        private const string BaseUrl = "http://localhost:5212/values";
+        private const string BaseUrl = "http://127.0.0.1:10212/values";
         private readonly HttpClient client;
         Scuola s = new Scuola();
 
@@ -41,9 +41,9 @@ namespace ModuloForm
             return responseStudente;
         }
 
-        private async Task<List<Studente>> getStudenti()
+        private async Task<List<Studente>> getStudenti(string id_classe)
         {
-            string getstudentiUrl = BaseUrl + "/studenti";
+            string getstudentiUrl = BaseUrl + $"/studenti?id_classe={id_classe}";
             var responseStudente = await client.GetFromJsonAsync<List<Studente>>(getstudentiUrl);
             return responseStudente;
         }
@@ -64,6 +64,24 @@ namespace ModuloForm
             var responseStudente = await client.PostAsJsonAsync(postmaterieUrl, values);
         }
 
+        private async void postStudente(string nome, string cognome, string id_studente, string id_classe)
+        {
+            List<string> values = new List<string>();
+            values.Add(nome);
+            values.Add(cognome);
+            values.Add(id_studente);
+            values.Add(id_classe);
+            string poststudenteUrl = BaseUrl + "/studenti";
+            var responseStudente = await client.PostAsJsonAsync(poststudenteUrl, values);
+        }
+
+        private async void postClasse(string id_classe)
+        {
+            List<string> values = new List<string>();
+            values.Add(id_classe);
+            string postclasseUrl = BaseUrl + "/classi";
+            var responseStudente = await client.PostAsJsonAsync(postclasseUrl, values);
+        }
 
 
         private async void btnPostStudente_Click(object sender, EventArgs e)
@@ -87,6 +105,8 @@ namespace ModuloForm
                 Console.WriteLine("Errore durante l'invio della richiesta per creare studente.");
             }
             */
+            postClasse("6_A");
+
         }
     }
 }

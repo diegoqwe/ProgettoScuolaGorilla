@@ -36,7 +36,7 @@
             // 
             // btnPostStudente
             // 
-            btnPostStudente.Location = new Point(582, 87);
+            btnPostStudente.Location = new Point(659, 415);
             btnPostStudente.Name = "btnPostStudente";
             btnPostStudente.Size = new Size(129, 23);
             btnPostStudente.TabIndex = 0;
@@ -47,7 +47,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(265, 203);
+            label1.Location = new Point(12, 15);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 1;
@@ -56,7 +56,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(265, 234);
+            label2.Location = new Point(12, 46);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 2;
@@ -65,7 +65,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(265, 263);
+            label3.Location = new Point(12, 75);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 3;

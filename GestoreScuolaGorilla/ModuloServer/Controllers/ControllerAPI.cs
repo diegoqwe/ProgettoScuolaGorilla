@@ -20,7 +20,6 @@ namespace ModuloServer.Controllers
         private const string passwd = "samuele01";
 
 
-
         [HttpGet]
         public ActionResult<string> Get()
         {
@@ -28,7 +27,7 @@ namespace ModuloServer.Controllers
         }
 
         [HttpPost("studenti")]
-        public ActionResult<string> PostStudente(Studente studente)
+        public ActionResult<string> PostStudente(List<string> studente)
         {
             var cs = $"Host={datasource};Port={port};Username={username};Password={passwd};Database={database}";
             using (var con = new NpgsqlConnection(cs))
@@ -36,14 +35,14 @@ namespace ModuloServer.Controllers
                 con.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = $"INSERT INTO STUDENTI (nome,cognome,id_matricola,id_classe) VALUES ('{studente.Nome}', '{studente.Cognome}','{studente.Matricola}','{studente.IdClasse}')";
+                cmd.CommandText = $"INSERT INTO STUDENTI (nome,cognome,id_matricola,id_classe) VALUES ('{studente[0]}', '{studente[1]}','{studente[2]}','{studente[3]}')";
                 cmd.ExecuteNonQuery();
             }
             return Ok();
         }
 
         [HttpPost("classi")]
-        public ActionResult<string> PostClasse(Classe classe)
+        public ActionResult<string> PostClasse(List<string> classe)
         {
             var cs = $"Host={datasource};Port={port};Username={username};Password={passwd};Database={database}";
             using (var con = new NpgsqlConnection(cs))
@@ -51,7 +50,7 @@ namespace ModuloServer.Controllers
                 con.Open();
                 var cmd = new NpgsqlCommand();
                 cmd.Connection = con;
-                cmd.CommandText = $"INSERT INTO CLASSI (id_classe) VALUES ('{classe.IdClasse}')";
+                cmd.CommandText = $"INSERT INTO CLASSI (id_classe) VALUES ('{classe[0]}')";
                 cmd.ExecuteNonQuery();
             }
             return Ok();
@@ -110,6 +109,26 @@ namespace ModuloServer.Controllers
                 }
             }
             return Ok(classi);
+        }
+
+        [HttpGet("studenti")]
+        public ActionResult<List<Studente>> GetStudente(string id_classe)
+        {
+            var cs = $"Host={datasource};Port={port};Username={username};Password={passwd};Database={database}";
+            List<Studente> studenti = new List<Studente>();
+            using (var con = new NpgsqlConnection(cs))
+            {
+                con.Open();
+                var cmd = new NpgsqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = $"SELECT * FROM STUDENTI WHERE ID_CLASSE = '{id_classe}'";
+                var rdr = cmd.ExecuteReader();
+                while (rdr.Read())
+                {
+                    studenti.Add(new Studente(rdr.GetString(2), rdr.GetString(3), rdr.GetString(0), rdr.GetString(1)));
+                }
+            }
+            return Ok(studenti);
         }
     }
 }
