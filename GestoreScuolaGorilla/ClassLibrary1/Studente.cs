@@ -20,6 +20,7 @@ namespace ClassLibrary1
             nome = "";
             cognome = "";
             matricola = "";
+            idClasse = "";
         }
 
         public Studente(string nome, string cognome)
@@ -28,6 +29,7 @@ namespace ClassLibrary1
             this.cognome = cognome;
             matricola = "";
             votiMaterie = new Dictionary<string, Voti>();
+            idClasse = "";
         }
 
         public string Nome
