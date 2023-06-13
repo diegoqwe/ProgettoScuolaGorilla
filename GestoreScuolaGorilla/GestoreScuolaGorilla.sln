@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuloServer", "ModuloServe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{6E8DEC9D-0DC1-4F9A-9CD6-906C25F1B311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloClient", "ModuloClient\ModuloClient.csproj", "{29EF77CE-F2E7-4282-BCB4-EE0E12252A7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuloForm", "ModuloForm\ModuloForm.csproj", "{719750C4-6C14-4FB1-9745-0A6B5181722F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{6E8DEC9D-0DC1-4F9A-9CD6-906C25F1B311}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E8DEC9D-0DC1-4F9A-9CD6-906C25F1B311}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E8DEC9D-0DC1-4F9A-9CD6-906C25F1B311}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29EF77CE-F2E7-4282-BCB4-EE0E12252A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29EF77CE-F2E7-4282-BCB4-EE0E12252A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29EF77CE-F2E7-4282-BCB4-EE0E12252A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29EF77CE-F2E7-4282-BCB4-EE0E12252A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719750C4-6C14-4FB1-9745-0A6B5181722F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719750C4-6C14-4FB1-9745-0A6B5181722F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719750C4-6C14-4FB1-9745-0A6B5181722F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719750C4-6C14-4FB1-9745-0A6B5181722F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
