@@ -29,6 +29,7 @@
         {
             voto.Add(v);
         }
+        
 
         public void remove(double v)
         {
