@@ -130,5 +130,22 @@ namespace ModuloServer.Controllers
             }
             return Ok(studenti);
         }
+
+        [HttpDelete("classe")]
+        public ActionResult<string> DeleteClasse(string id_classe)
+        {
+            var cs = $"Host={datasource};Port={port};Username={username};Password={passwd};Database={database}";
+            using (var con = new NpgsqlConnection(cs))
+            {
+                con.Open();
+                var cmd = new NpgsqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = $"DELETE FROM MATERIE WHERE ID_CLASSE = '{id_classe}'";
+                cmd.ExecuteNonQuery();
+                cmd.CommandText = $"DELETE FROM CLASSI WHERE ID_CLASSE = '{id_classe}'";
+                cmd.ExecuteNonQuery();
+            }
+            return Ok();
+        }
     }
 }
